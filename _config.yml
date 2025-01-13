@@ -1,3 +1,13 @@
-theme: minima
+remote_theme: just-the-docs/just-the-docs
 title: Rover Milestone
 description: Documenting the engineering journey of building an autonomous rover.
+plugins:
+  - jekyll-remote-theme
+
+# Navigation structure
+nav:
+  - Home: index.md
+  - Physics:
+      - Overview: physics/overview.md
+      - Module 1:
+          - Task description: physics/module_one/task_description.md
