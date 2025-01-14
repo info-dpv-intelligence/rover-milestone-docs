@@ -11,9 +11,9 @@ Welcome to the documentation for the **Rover Milestone** project. This project a
 
 This milestone focuses on both theoretical and practical tasks to develop the essential systems for rover operation, including:
 
-- **Mechanical Systems**
-- **Electronic Systems**
-- **Software Systems**
+- **Physics**
+- **Electricity**
+- **Algorithms**
 
 ## Power Configuration
 
