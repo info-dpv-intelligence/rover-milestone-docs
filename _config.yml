@@ -4,10 +4,7 @@ description: Documenting the engineering journey of building an autonomous rover
 plugins:
   - jekyll-remote-theme
 
-# Navigation structure
-nav:
-  - Home: index.md
-  - Physics:
-      - Overview: physics/overview.md
-      - Modules:
-          - Module 1: physics/module_one/task_description.md
+
+exclude:
+  - Dockerfile
+  - docker-compose.yml

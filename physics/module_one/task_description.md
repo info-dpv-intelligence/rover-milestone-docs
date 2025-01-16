@@ -1,4 +1,10 @@
-# Task: Simulate Rover Traversal on Varied Terrain
+---
+layout: default
+title: Mechanics of Motion
+parent: Physics
+---
+
+### Task: Simulate Rover Traversal on Varied Terrain
 
 ### Objective
 
