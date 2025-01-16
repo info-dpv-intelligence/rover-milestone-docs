@@ -5,8 +5,7 @@
 Design and simulate a rover navigating a path with:
 
 1. **Flat terrain with low friction** (e.g., sand).
-![FBD](resources/images/free_body_diagram__flat_terrain.png)
-
+    ![FBD](resources/images/free_body_diagram__flat_terrain.png)
 2. **Steep incline (45°) with moderate friction** (e.g., rocky terrain).
 3. **Flat terrain with high friction** (e.g., asphalt).
 

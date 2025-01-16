@@ -10,5 +10,4 @@ nav:
   - Physics:
       - Overview: physics/overview.md
       - Modules:
-        - Module 1:
-          - Task description: physics/module_one/task_description.md
+          - Module 1: physics/module_one/task_description.md
