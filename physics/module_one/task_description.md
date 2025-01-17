@@ -11,9 +11,18 @@ parent: Physics
 Design and simulate a rover navigating a path with:
 
 1. **Flat terrain with low friction** (e.g., sand).
-    ![FBD](resources/images/free_body_diagram__flat_terrain.png)
+
+    <a href="resources/images/fbd/flat_terrain.png" data-fancybox="terrain-images" data-title="Free Body Diagram - Flat Terrain">
+        <img src="resources/images/fbd/flat_terrain.png" alt="FBD Flat Terrn" />
+    </a>
+
 2. **Steep incline (45°) with moderate friction** (e.g., rocky terrain).
-3. **Flat terrain with high friction** (e.g., asphalt).
+
+    <a href="resources/images/fbd/inclined_terrain.png" data-fancybox="terrain-images" data-title="Free Body Diagram - Inclined Terrain">
+        <img src="resources/images/fbd/inclined_terrain.png" alt="FBD Inclined Terrain" />
+    </a>
+
+_Note: High friction surfaces (e.g., asphalt) provide greater resistance to motion due to higher friction coefficients._
 
 ### Integration
 
