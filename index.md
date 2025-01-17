@@ -5,7 +5,7 @@ has_children: true
 ---
 # 🚀 Rover Mission Documentation
 
-Welcome to the documentation for the **Rover Milestone** project. This project aims to design, develop, and prototype an autonomous rover capable of navigating challenging Martian-like terrains.
+Welcome to the documentation for the **Rover Milestone project**, a foundational initiative focused on developing a land-based exploration rover as a stepping stone toward future space exploration. The goal of this project is to design, develop, and prototype an autonomous rover capable of navigating challenging planetary-like terrains
 
 ## Mission Objectives
 
