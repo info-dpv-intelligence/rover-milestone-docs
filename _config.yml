@@ -4,6 +4,11 @@ description: Documenting the engineering journey of building an autonomous rover
 plugins:
   - jekyll-remote-theme
 
+head_scripts:
+  - src: https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js
+
+head_styles:
+  - href: https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css
 
 exclude:
   - Dockerfile
