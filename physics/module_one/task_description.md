@@ -100,16 +100,10 @@ Design and simulate a rover navigating through different terrain conditions.
 
 ### Physics Concepts Applied
 1. **Newton's Laws of Motion**
-2. **Kinematics**
-   - Displacement calculation
-   - Velocity
-   - Trajectory analysis
-3. **Friction Analysis**
+2. **Friction Analysis**
     - Static/Dynamic friction
     - Surface interactions
-4. **Inclined Plane Dynamics**
-   - Force analysis
-   - Stability assessment
-5. **Forces on Rigid Bodies**
-   - Component forces
+3. **Inclined Plane Dynamics**
+   - Normal force components
+   - Parallel force components
    - Critical angle analysis
