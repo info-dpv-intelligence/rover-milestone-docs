@@ -1,11 +1,25 @@
-update-docs:
-	git checkout main
-	git pull origin main
-	git fetch origin doc/update
-	git checkout -b doc/update origin/doc/update || git checkout doc/update
-	mkdir -p docs
-	git checkout doc/update -- .
-	mv * docs/ || true  # Move files into docs/ if they exist
-	git add docs/
-	git commit -m "Updated docs from doc/update"
-	git push origin main
+.PHONY: up down clean build
+
+docs-service=rover-milestone-docs
+
+up: 
+	$(MAKE) clean
+	docker rm -f $(docs-service) || true
+	docker-compose up -d
+
+
+down:
+	docker-compose down
+
+clean:
+	docker-compose down -v
+	docker-compose rm -f -v
+
+build:
+	docker-compose build
+
+prune:
+	docker image prune -f
+
+exec:
+	docker-compose exec $(docs-service) bash

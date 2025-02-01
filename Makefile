@@ -1,21 +1,25 @@
-update-docs:
-	# Stay on main and update
-	git checkout main
-	git pull origin main
+.PHONY: up down clean build
 
-	# Setup temp workspace
-	rm -rf temp
-	mkdir -p temp docs
+docs-service=rover-milestone-docs
 
-	# Get doc/update content
-	git fetch origin doc/update
-	git --work-tree=temp checkout origin/doc/update -- .
+up: 
+	$(MAKE) clean
+	docker rm -f $(docs-service) || true
+	docker-compose up -d
 
-	# Copy to docs and cleanup
-	cp -R temp/* docs/
-	rm -rf temp
 
-	# Commit if changes exist
-	git add docs/
-	git diff --staged --quiet || git commit -m "Updated docs from doc/update"
-	git push origin main
+down:
+	docker-compose down
+
+clean:
+	docker-compose down -v
+	docker-compose rm -f -v
+
+build:
+	docker-compose build
+
+prune:
+	docker image prune -f
+
+exec:
+	docker-compose exec $(docs-service) bash
