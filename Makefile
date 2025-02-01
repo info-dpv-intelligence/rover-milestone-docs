@@ -1,11 +1,21 @@
 update-docs:
+	# Stay on main and update
 	git checkout main
 	git pull origin main
+
+	# Setup temp workspace
+	rm -rf temp
+	mkdir -p temp docs
+
+	# Get doc/update content
 	git fetch origin doc/update
-	git checkout -b doc/update origin/doc/update || git checkout doc/update
-	mkdir -p docs
-	git checkout doc/update -- .
-	mv * docs/ || true  # Move files into docs/ if they exist
+	git --work-tree=temp checkout origin/doc/update -- .
+
+	# Copy to docs and cleanup
+	cp -R temp/* docs/
+	rm -rf temp
+
+	# Commit if changes exist
 	git add docs/
-	git commit -m "Updated docs from doc/update"
+	git diff --staged --quiet || git commit -m "Updated docs from doc/update"
 	git push origin main
